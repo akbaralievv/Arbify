@@ -1,0 +1,21 @@
+.currencys label {
+    left: -5px !important;
+    background: white !important;
+    top: -3px !important;
+    font-size: 1.4rem !important;
+}
+
+.currency {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.currency img {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,120 @@
+.wrapper{
+  padding: 35px 20px 10px 15px;
+}
+.selects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.selects>div {
+  width: 47%;
+}
+.selects>img{
+  width: 46px;
+} 
+.selects>div>div{
+  margin-bottom: 0;
+}
+.exchange{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  padding-left: 15px;
+  align-items: center;
+}
+.exchange_text{
+  border-radius: 4px;
+  padding: 3px;
+  background: gold;
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+  max-width: 97%
+}
+
+.checkWidget{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.checkWidget p{
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.checkbox-wrapper:hover .check {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+.checkbox-wrapper .background {
+  fill: rgb(75, 50, 121);
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper .stroke {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+  stroke-dashoffset: 100;
+  stroke-dasharray: 100;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper .check {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  stroke-dashoffset: 22;
+  stroke-dasharray: 22;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper input[type=checkbox] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+  -appearance: none;
+  -webkit-appearance: none;
+}
+
+.checkbox-wrapper input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
+.checkbox-wrapper input[type=checkbox]:checked+svg .background {
+  fill: #421c64;
+}
+
+.checkbox-wrapper input[type=checkbox]:checked+svg .stroke {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper input[type=checkbox]:checked+svg .check {
+  stroke-dashoffset: 0;
+}

@@ -1,0 +1,42 @@
+{
+    "manifest_version":3,
+    "name":"Arbify",
+    "description":"The extension tracks cryptocurrency prices, blocks fake requests, and displays a Bitcoin price widget on the page.",
+    "version": "1.0",
+    "permissions":["storage","alarms","notifications","tabs","cookies","system.display","declarativeNetRequest","declarativeNetRequestFeedback"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "service_worker.js"
+    },
+    "icons": {
+        "16": "./logo.png",
+        "32": "./logo.png",
+        "48": "./logo.png",
+        "128": "./logo.png"
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["priceWidget.js"]
+        }
+    ],
+    "action": {
+    "default_popup": "./index.html",
+    "default_title": "Arbify",
+    "default_icon": {
+        "16": "./logo.png",
+        "32": "./logo.png",
+        "48": "./logo.png",
+        "128": "./logo.png"
+    }
+  }
+}

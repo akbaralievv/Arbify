@@ -1,0 +1,26 @@
+.link {
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #000;
+  font-weight: 700;
+}
+
+.img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.trust-score.green {
+  color: green;
+}
+
+.trust-score.red {
+  color: red;
+}
